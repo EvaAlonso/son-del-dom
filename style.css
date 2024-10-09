@@ -7,6 +7,102 @@ body{
  
 	background-color: #1a1a1a;
 }
+
+h1 { 
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 50px; 
+}
+
+.note  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.note-1 {
+    width: 100px;
+    height: auto;
+    margin-top: 80px;
+    
+}
+
+p {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    margin-block: calc((80vh - 300px)/2);
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border: solid 1px #fff;
+    border-radius: 200px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+}
+
+.zoom-1 {
+    transition: transform .15s ease;
+
+}
+
+.zoom-1:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.zoom-2 {
+    transition: all .3s ease;
+
+}
+
+.zoom-2:hover {
+    transform: scale(1.8);
+    -webkit-transform: scale(1.6);
+}
+
+.zoom-3 {
+    perspective: 1000px;
+    transition: transform .25s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+
+
+
+.zoom-3:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+footer {
+ margin: 50px;
+}
 @media(width <= 550px){
 	.hamburger{
 		position:fixed;
