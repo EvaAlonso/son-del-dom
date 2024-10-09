@@ -212,7 +212,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #555;
+    background-color: #847b7b;
     cursor: pointer;
     border-radius: 5px;
 }
