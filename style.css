@@ -179,34 +179,34 @@ footer {
 		font-size:1.5rem;
 		line-height:3em;
 		height:3em;
-	 
 		text-transform:none;
 		font-weight:bold;
 	}
 	.menuppal ul li a{
 		text-decoration:none;
 		color: white;
-	 
 	}
 	.menuppal ul li a:hover{
 		text-decoration:none;
-		background-color: #555;
+		background-color: #555555;
 	}
 }
 
 nav {
-    background-color: #333;
+    background-color: #333333;
     padding: 10px;
+	
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+	
 }
 
 nav ul li {
-    color: white;
+    color: rgb(228, 40, 40);
     font-size: 18px;
     padding: 8px 16px;
 }
@@ -215,4 +215,20 @@ nav ul li:hover {
     background-color: #847b7b;
     cursor: pointer;
     border-radius: 5px;
+}
+@media(width >= 600px) {
+    .menuppal ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Verdadna, Arial, Helvetica;
+        font-size: 15px;
+    }
+}
+@media(width <= 600px) {
+    .menuppal ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Verdadna, Arial, Helvetica;
+        font-size: 15px;
+    }
 }
