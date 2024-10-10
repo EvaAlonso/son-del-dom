@@ -221,7 +221,8 @@ nav ul li:hover {
         color: #fff;
         text-decoration: none;
         font-family: Verdadna, Arial, Helvetica;
-        font-size: 15px;
+        font-size: 25px;
+		font-weight: 700;
     }
 }
 @media(width <= 600px) {
@@ -229,6 +230,7 @@ nav ul li:hover {
         color: #fff;
         text-decoration: none;
         font-family: Verdadna, Arial, Helvetica;
-        font-size: 15px;
+        font-size: 25px;
+		font-weight: 700;
     }
 }
