@@ -102,6 +102,10 @@ p {
 	-webkit-transform: rotate(360deg);
 }
 
+.title-1 {
+	text-decoration: none;
+}
+
 footer {
 	margin: 50px;
 }
