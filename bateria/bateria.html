@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bateria/bateria.css">
+  <title>Bateria</title>
 </head>
 
 <body>
-    <section>
-        <div class="note">
-            <a href="/index.html" class="title-1">
-                <h1>¡¡AL SON DEL DOM!!</h1>
-           </a>
-           <img class="note-1" src="/assets/nota.png" alt="">
-        </div>
-        <div class="bateria">
-            <img src="/bateria/imagenes-de-bateria/Bombo Bass drum.png" alt="Bombo" class="bombo">
-            <img src="/bateria/imagenes-de-bateria/Tom de suelo (Floor tom).png" alt="Tom de suelo" class="tom-suelo">
-            <img src="/bateria/imagenes-de-bateria/Tom-toms.png" alt="Tom-tom superior" class="tom-superior">
-            <img src="/bateria/imagenes-de-bateria/Tom-toms.png" alt="Tom-tom inferior" class="tom-inferior">
-            <img src="/bateria/imagenes-de-bateria/Caja (Snare drum).png" alt="Caja" class="caja">
-            <img src="/bateria/imagenes-de-bateria/Ride cymbal.png" alt="Ride" class="ride">
-            <img src="/bateria/imagenes-de-bateria/Crash cymbal.png" alt="Crash" class="crash">
-            <img src="/bateria/imagenes-de-bateria/Hi-hat.png" alt="Hi-hat" class="hi-hat">
-        </div>
+  <header>
+    <h1><a href="../index.html" class="title-1">¡¡AL SON DEL DOM!!</a></h1>
+    <img class="note-1" src="/assets/nota.png" alt="clave de sol">
+  </header>
+  <section class="bateria">
+    <img src="/bateria/imagenes-de-bateria/Ride cymbal.png" alt="Ride" class="ride">
+    <img src="/bateria/imagenes-de-bateria/Tom-toms.png" alt="Tom-tom superior izquierda" class="tom-superior-izquierda">
+    <img src="/bateria/imagenes-de-bateria/Caja (Snare drum).png" alt="Caja" class="caja">    
+    <img src="/bateria/imagenes-de-bateria/Tom-toms.png" alt="Tom-tom inferior" class="tom-inferior">
+    
+    <img src="/bateria/imagenes-de-bateria/Crash cymbal.png" alt="Crash" class="crash">
+    <img src="/bateria/imagenes-de-bateria/Hi-hat.png" alt="Hi-hat" class="hi-hat">
+    <img src="/bateria/imagenes-de-bateria/Bombo Bass drum.png" alt="Bombo" class="bombo-centro">
+    <img src="/bateria/imagenes-de-bateria/Tom de suelo (Floor tom).png" alt="Tom de suelo" class="tom-suelo">
+  </section>
+  <div class="drum-kit">
+    <div id="crash" class="drum" data-key="65">A</div>
+    <div id="kick" class="drum" data-key="83">S</div>
+    <div id="snare" class="drum" data-key="68">D</div>
+    <div id="tom" class="drum" data-key="70">F</div>
+</div>
 
-    </section>
+<script src="./bateria.js"></script>
 </body>
 
 </html>
