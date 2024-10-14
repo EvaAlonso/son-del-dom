@@ -102,15 +102,52 @@ p {
 	-webkit-transform: rotate(360deg);
 }
 
-.title-1 {
-	text-decoration: none;
-}
+
+
+
 
 footer {
 	margin: 50px;
 }
 
+
+
 @media(width <=550px) {
+	
+	
+		h1 {
+		  font-size: 40px;
+		  margin-top: 20px;
+		  margin-left: 50px;
+		}
+		h2 {
+		  font-size: 25px;
+		  margin-top: 20px;
+		}
+		.note {
+		  flex-direction: column;
+		}
+		.note-1 {
+		  width: 80px;
+		  margin-top: 20px;
+		}
+		.image-container {
+		  flex-direction: column;
+		  gap: 50px;
+		  margin-block: 20px;
+		}
+		.image-container img {
+		  width: 90%;
+		  max-width: 200px;
+		  margin: 0 auto;
+		}
+		p {
+		  font-size: 1.5em;
+		}
+		footer p {
+		  font-size: 1em;
+		  text-align: center;
+		}
 	.hamburger {
 		position: fixed;
 		background-color: transparent;
@@ -189,7 +226,8 @@ footer {
 
 	.menuppal ul li {
 		list-style: none;
-		text-align: center;
+		margin-left: 50px;
+		margin-top: 50px;
 		font-family: Verdadna, Arial, Helvetica;
 		color: white;
 		font-size: 1.5rem;
@@ -210,16 +248,19 @@ footer {
 	}
 }
 
-nav {
-	background-color: #333333;
-	padding: 10px;
+@media(width >550px) {
+	.menuppal ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		
+	}
 
 }
 
 nav ul {
 	list-style-type: none;
-	display: flex;
-	justify-content: space-around;
+	
 
 }
 
@@ -229,32 +270,69 @@ nav ul li {
 	padding: 8px 16px;
 }
 
-nav ul li:hover {
-	background-color: #847b7b;
-	cursor: pointer;
-	border-radius: 5px;
-}
+
 
 @media(width >=600px) {
 	.menuppal ul li a {
-		display: flex;
-		flex-direction: row;
 		color: #fff;
 		text-decoration: none;
 		font-family: Verdadna, Arial, Helvetica;
 		font-size: 25px;
 		font-weight: 700;
+		
 	}
+	
+	
+	
+
+
+	.menuppal {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		background-color: #1a1a1a;
+		padding: 10px 20px;
+	}
+	
+	.header img {
+		max-height: 150px; 
+		border-radius: 45px;
+	
+	}
+	
+	.menuppal ul {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		justify-content: space-evenly;
+		gap: 20px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.menuppal ul li a {
+		color: white;
+		text-decoration: none;
+		font-size: 16px;
+	}
+	  
 }
+
+
 
 @media(width <=600px) {
 	.menuppal ul li a {
 		color: #fff;
 		text-decoration: none;
 		font-family: Verdadna, Arial, Helvetica;
-		font-size: 25px;
+		font-size: 10px;
 		font-weight: 700;
 	}
-}
 
+	.header {
+        display: none; 
+    }
+  
+	
+	
+}
 
