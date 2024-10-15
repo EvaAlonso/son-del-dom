@@ -279,6 +279,7 @@ nav ul li {
 		font-family: Verdadna, Arial, Helvetica;
 		font-size: 20px;
 		font-weight: 700;
+
 		
 	}
 	
@@ -313,8 +314,14 @@ nav ul li {
 		color: white;
 		text-decoration: none;
 		font-size: 16px;
-	}
-	  
+    }
+
+	.menuppal ul li a:hover {
+		color: rgb(78, 78, 78);
+		text-decoration: none;
+		font-size: 16px;
+    }
+	
 }
 
 
