@@ -10,37 +10,35 @@ const hitHat = document.querySelector(".hi-hat");
 
 function playBombo() {
   new Audio("./sounds/boom.wav").play();
-  bombo.classList.add("animated", "pulse");
+  bombo.classList.toggle("light");
 }
 function playFloorTom() {
   new Audio("./sounds/tom.wav").play();
-  floorTom.classList = ["animated", "pulse"] ?
-  floorTom.classList.remove("animated", "pulse"):floorTom.classList.add("animated", "pulse");
-  console.log(floorTom.classList)
+  floorTom.classList.toggle("light");
 }
 function playTom() {
   new Audio("./sounds/kick.wav").play();
-  tomUpLeft.classList.add("animated", "pulse");
+  tomUpLeft.classList.toggle("light");
 }
 function playSnareDrum() {
   new Audio("./sounds/snare.wav").play();
-  tomDown.classList.add("animated", "pulse");
+  tomDown.classList.toggle("light");
 }
 function playClap() {
   new Audio("./sounds/clap.wav").play();
-  snareDrum.classList.add("animated", "pulse");
+  snareDrum.classList.toggle("light");
 }
 function playRide() {
   new Audio("./sounds/ride.wav").play();
-  ride.classList.add("animated", "pulse");
+  ride.classList.toggle("light");
 }
 function playCrash() {
   new Audio("./sounds/openhat.wav").play();
-  crash.classList.add("animated", "pulse");
+  crash.classList.toggle("light");
 }
 function playHitHat() {
   new Audio("./sounds/hihat.wav").play();
-  hitHat.classList.add("animated", "pulse");
+  hitHat.classList.toggle("light");
 }
 bombo.addEventListener('click', () => playBombo());
 floorTom.addEventListener("click", () => {
