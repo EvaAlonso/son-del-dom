@@ -1,0 +1,16 @@
+html{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+
+}
+p:hover{
+    background-color: red;
+
+}
+.no-red:hover{
+    background-color: black;
+}
