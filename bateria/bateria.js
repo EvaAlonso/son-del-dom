@@ -9,23 +9,24 @@ const crash = document.querySelector(".crash");
 const hitHat = document.querySelector(".hi-hat");
 
 function playBombo() {
-  new Audio("./sounds/boom.wav").play();
+  new Audio("./sounds/tom.wav").play();
   bombo.classList.toggle("light");
 }
 function playFloorTom() {
-  new Audio("./sounds/tom.wav").play();
+  new Audio("./sounds/BlastBlock.wav").play();
   floorTom.classList.toggle("light");
 }
 function playTom() {
   new Audio("./sounds/kick.wav").play();
   tomUpLeft.classList.toggle("light");
 }
-function playSnareDrum() {
-  new Audio("./sounds/snare.wav").play();
-  tomDown.classList.toggle("light");
-}
+
 function playClap() {
   new Audio("./sounds/clap.wav").play();
+  tomDown.classList.toggle("light");
+}
+function playSnareDrum() {
+  new Audio("./sounds/snare.wav").play();
   snareDrum.classList.toggle("light");
 }
 function playRide() {
@@ -37,7 +38,7 @@ function playCrash() {
   crash.classList.toggle("light");
 }
 function playHitHat() {
-  new Audio("./sounds/hihat.wav").play();
+  new Audio("./sounds/HHsort.wav").play();
   hitHat.classList.toggle("light");
 }
 bombo.addEventListener('click', () => playBombo());
@@ -53,102 +54,60 @@ crash.addEventListener("click", () => playCrash());
 hitHat.addEventListener("click", () => playHitHat());
 
 /* EVENTO Notas Teclado */
-/* document.addEventListener("keydown", (event) => {
+document.addEventListener("keydown", (event) => {
   switch (event.key) {
 
-      // Nota C3 (Do3)
+      // Ride
       case 'a':
       case 'A':
       case '65':
-          doNotePlay();
+        playRide();
           break;
-  
-      // Nota Db3 (Reb3)
-      case 'w':
-      case 'W':
-      case '87':
-          doSosNotePlay();
-          break;
-
-      // Nota D3 (Re3)
+  // Tom-superior-izquierda
       case 's':
       case 'S':
       case '83':
-          reNotePlay();
+          playTom();
           break;
-
-      // Nota Eb3 (Mib3)
-      case 'e':
-      case 'E':
-      case '69':
-          reSosNotePlay();
-          break;
-
-      // Nota E3 (Mi3)
+      // caja
       case 'd':
       case 'D':
       case '68':
-          miNotePlay();
+          playSnareDrum();
           break;
-      
-      // Nota F3 (F3)
+      // Tom-inferior
       case 'f':
       case 'F':
       case '70':
-          faNotePlay();
+          playFloorTom();
           break;
-      
-      // Nota Gb3 (Solb3)
-      case 't':
-      case 'T':
-      case '84':
-          faSosNotePlay();
-          break;
-
-      // Nota G3 (Sol3)
+      //Crash
       case 'g':
       case 'G':
       case '71':
-          solNotePlay();
+          playCrash();
           break;
-
-      // Nota Ab3 (Lab3)
-      case 'y':
-      case 'Y':
-      case '89':
-          solSosNotePlay();
-          break;
-
-      // Nota A3 (La3)
+// Hi-hat
       case 'h':
       case 'H':
       case '72':
-          laNotePlay();
+          playHitHat();
           break;
-      
-      // Nota Bb3 (Sib3)
-      case 'u':
-      case 'U':
-      case '85':
-          laSosNotePlay();
-          break;
-
-      // Nota B3 (Si3)
+     // Bombo
       case 'j':
       case 'J':
       case '74':
-          siNotePlay();
+        playBombo();
           break;
-
-      // Nota C4 (Do4)
+      
+      // tom-suelo
       case 'k':
       case 'K':
       case '75':
-          do8NotePlay();
+         tomDown();
           break;
 
       // Cualquier otra tecla no hace nada
       default:
           break;
-  }; 
-*/
+  }}) 

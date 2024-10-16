@@ -200,7 +200,7 @@ footer {
 
 	.hamburger.is-active .top {
 
-		transform: translateY(200%) rotate(45deg) !important;
+		transform: translateY(200%) rotate(45deg)/*  !important */;
 	}
 
 	.hamburger.is-active .mid {
@@ -209,7 +209,7 @@ footer {
 
 	.hamburger.is-active .bottom {
 
-		transform: translateY(-200%) rotate(135deg) !important;
+		transform: translateY(-200%) rotate(135deg) /* !important */;
 	}
 
 	.menuppal.is_active {
@@ -254,9 +254,11 @@ footer {
 	}
 
 	.menuppal ul li a:hover {
+		color: #B1E501;
 		text-decoration: none;
-		background-color: #555555;
-	}
+		font-size: 20px;
+		
+    }
 }
 
 @media(width >550px) {
@@ -326,14 +328,14 @@ nav ul li {
 	.menuppal ul li a {
 		color: white;
 		text-decoration: none;
-		font-size: 16px;
+		font-size: 24px;
 		font-family: "Bebas Neue", sans-serif;
     }
 
 	.menuppal ul li a:hover {
 		color: #B1E501;
 		text-decoration: none;
-		font-size: 20px;
+		font-size: 28px;
 		
     }
 	
