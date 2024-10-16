@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -8,15 +9,22 @@
 header{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-block: 24px;
+  margin-bottom: 50px;
   h1 {
     text-align: center;
     color: #fff;
     font-size: 2rem;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
     
   }
+  
+  h1 a:hover{
+    color: #B1E501;
+
+  }
+
   .note-1{
     width: 50px;
     margin-inline-start: 50px;
@@ -26,6 +34,13 @@ header{
 .title-1 {
   text-decoration: none;
   color: #fff;
+}
+
+.logo  {
+  margin: 20px;
+  width: 100px;
+  height: auto;
+  border-radius: 25px;
 }
 
 
@@ -39,6 +54,7 @@ header{
   / 1fr 1fr 1fr 1fr 1fr;
 gap: 8px; */
 
+margin-top: 50px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2,400px);
   justify-items: stretch;
