@@ -1,12 +1,23 @@
-html{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    background-color: #1a1a1a;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 42px;
 
 }
+h1 {
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+p {
+    font-family: "Bebas Neue", sans-serif;
+}
+
 p:hover{
     background-color: red;
 
